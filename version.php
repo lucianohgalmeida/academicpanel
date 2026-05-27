@@ -2,7 +2,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_academicpanel';
-$plugin->version = 2026052713;
+$plugin->version = 2026052714;
 $plugin->requires = 2022112800;
 $plugin->maturity = MATURITY_ALPHA;
 $plugin->release = '0.2.1';

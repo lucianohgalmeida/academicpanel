@@ -30,6 +30,13 @@ function xmldb_local_academicpanel_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2026052711, 'local', 'academicpanel');
     }
 
+    if ($oldversion < 2026052714) {
+        // Rebackfill com filtro de user inexistente (caso savepoint 2026052711 tenha falhado antes).
+        local_academicpanel_backfill_coordinator_role();
+
+        upgrade_plugin_savepoint(true, 2026052714, 'local', 'academicpanel');
+    }
+
     return true;
 }
 
@@ -49,6 +56,9 @@ function local_academicpanel_backfill_coordinator_role() {
     $context = \context_system::instance();
     $userids = $DB->get_fieldset_select('local_acpanel_coord', 'DISTINCT userid', 'active = 1');
     foreach ($userids as $userid) {
+        if (!$DB->record_exists('user', ['id' => (int)$userid, 'deleted' => 0])) {
+            continue;
+        }
         role_assign($roleid, (int)$userid, $context->id, 'local_academicpanel');
     }
 }
