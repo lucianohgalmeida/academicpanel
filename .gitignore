@@ -1,0 +1,7 @@
+.playwright-cli/
+.claude/
+.DS_Store
+*.log
+*.tmp
+node_modules/
+vendor/

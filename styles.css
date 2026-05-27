@@ -1,0 +1,467 @@
+.local-academicpanel-header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.local-academicpanel-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.local-academicpanel-filters {
+    align-items: stretch;
+    background: #fff;
+    border: 1px solid #d7dfe7;
+    border-radius: 8px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(280px, 2fr) minmax(220px, 1fr) auto;
+    margin: 1rem 0 1.25rem;
+    padding: 1rem 1.1rem;
+}
+
+.local-academicpanel-filters label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: .25rem;
+}
+
+.local-academicpanel-filters select {
+    max-width: 100%;
+    width: 100%;
+}
+
+.local-academicpanel-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+    min-width: 0;
+}
+
+.local-academicpanel-filter-group-compare {
+    border-left: 1px dashed #d7dfe7;
+    padding-left: 1rem;
+}
+
+.local-academicpanel-filter-grouplabel {
+    color: #52616f;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.local-academicpanel-filter-fields {
+    display: grid;
+    gap: .65rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    min-width: 0;
+}
+
+.local-academicpanel-filter-field {
+    min-width: 0;
+}
+
+.local-academicpanel-filter-hint {
+    color: #64748b;
+    display: block;
+    font-size: .72rem;
+    line-height: 1.3;
+    margin-top: .35rem;
+}
+
+.local-academicpanel-filter-submit {
+    align-items: end;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+
+.local-academicpanel-filter-submit .btn {
+    height: fit-content;
+}
+
+.local-academicpanel-filter-submit .btn-secondary,
+.local-academicpanel-filter-submit .btn-secondary:link,
+.local-academicpanel-filter-submit .btn-secondary:visited,
+.local-academicpanel-filter-submit .btn-secondary:hover,
+.local-academicpanel-filter-submit .btn-secondary:focus {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.local-academicpanel-compare-banner {
+    font-size: .9rem;
+    margin: 0 0 1rem;
+}
+
+@media (max-width: 900px) {
+    .local-academicpanel-filters {
+        grid-template-columns: 1fr;
+    }
+    .local-academicpanel-filter-group-compare {
+        border-left: 0;
+        border-top: 1px dashed #d7dfe7;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+}
+
+.local-academicpanel-cards {
+    display: grid;
+    gap: .75rem;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    margin: 1rem 0 1.5rem;
+}
+
+.local-academicpanel-card {
+    background: #fff;
+    border: 1px solid #d7dfe7;
+    border-radius: 6px;
+    min-height: 104px;
+    padding: .85rem 1rem;
+}
+
+.local-academicpanel-card-label {
+    color: #52616f;
+    font-size: .82rem;
+    font-weight: 600;
+    margin-bottom: .25rem;
+    text-transform: uppercase;
+}
+
+.local-academicpanel-card-value {
+    color: #1d2733;
+    font-size: 1.55rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.local-academicpanel-card-delta {
+    min-height: 1.25rem;
+}
+
+.local-academicpanel-charts {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(320px, 2fr) repeat(2, minmax(220px, 1fr));
+    margin: 0 0 1.5rem;
+}
+
+.local-academicpanel-chart-panel {
+    background: #fff;
+    border: 1px solid #d7dfe7;
+    border-radius: 6px;
+    min-width: 0;
+    padding: 1rem;
+}
+
+.local-academicpanel-chart-panel-wide {
+    min-height: 286px;
+}
+
+.local-academicpanel-chart-heading {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    justify-content: space-between;
+    margin-bottom: .85rem;
+}
+
+.local-academicpanel-chart-title {
+    color: #1d2733;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.local-academicpanel-chart-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+}
+
+.local-academicpanel-chart-tab {
+    background: #f4f7fb;
+    border: 1px solid #cfd8e3;
+    border-radius: 999px;
+    color: #334155;
+    cursor: pointer;
+    font-size: .78rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: .45rem .65rem;
+}
+
+.local-academicpanel-chart-tab.is-active {
+    background: #255b9d;
+    border-color: #255b9d;
+    color: #fff;
+}
+
+.local-academicpanel-bar-chart {
+    display: grid;
+    gap: .7rem;
+}
+
+.local-academicpanel-bar-item {
+    display: grid;
+    gap: .45rem;
+    grid-template-columns: minmax(120px, 190px) minmax(160px, 1fr);
+}
+
+.local-academicpanel-bar-label {
+    color: #334155;
+    font-size: .88rem;
+    font-weight: 600;
+    line-height: 1.25;
+    min-width: 0;
+}
+
+.local-academicpanel-bar-track {
+    align-items: center;
+    background: #edf2f7;
+    border-radius: 999px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    min-height: 28px;
+    overflow: hidden;
+    position: relative;
+}
+
+.local-academicpanel-bar-fill {
+    background: linear-gradient(90deg, #255b9d, #2f855a);
+    border-radius: 999px;
+    height: 100%;
+    min-width: 2px;
+    transition: width .2s ease;
+    width: var(--bar-value);
+}
+
+.local-academicpanel-bar-value {
+    color: #1d2733;
+    font-size: .82rem;
+    font-weight: 700;
+    padding: 0 .65rem;
+    position: absolute;
+    right: 0;
+}
+
+.local-academicpanel-donut {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 148px;
+    justify-content: center;
+    margin: 1rem auto;
+    position: relative;
+    width: 148px;
+}
+
+.local-academicpanel-donut::after {
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 96px;
+    position: absolute;
+    width: 96px;
+}
+
+.local-academicpanel-donut-total,
+.local-academicpanel-donut-caption {
+    position: relative;
+    z-index: 1;
+}
+
+.local-academicpanel-donut-total {
+    color: #1d2733;
+    font-size: 1.65rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.local-academicpanel-donut-caption {
+    color: #64748b;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.local-academicpanel-donut-legend {
+    display: grid;
+    gap: .45rem;
+}
+
+.local-academicpanel-donut-legend-row {
+    align-items: center;
+    display: grid;
+    gap: .4rem;
+    grid-template-columns: auto 1fr auto;
+}
+
+.local-academicpanel-swatch {
+    border-radius: 50%;
+    display: inline-block;
+    height: .7rem;
+    width: .7rem;
+}
+
+.local-academicpanel-swatch-engaged {
+    background: #2f855a;
+}
+
+.local-academicpanel-swatch-abandoned {
+    background: #d97706;
+}
+
+.local-academicpanel-swatch-never {
+    background: #64748b;
+}
+
+.local-academicpanel-swatch-approved {
+    background: #2563eb;
+}
+
+.local-academicpanel-swatch-failed {
+    background: #dc2626;
+}
+
+.local-academicpanel-swatch-ungraded {
+    background: #7c3aed;
+}
+
+.local-academicpanel-donut-label,
+.local-academicpanel-donut-value {
+    color: #334155;
+    font-size: .84rem;
+}
+
+.local-academicpanel-donut-value {
+    font-weight: 700;
+}
+
+.local-academicpanel-positive {
+    color: #0f7a4f;
+    font-weight: 700;
+}
+
+.local-academicpanel-negative {
+    color: #b42318;
+    font-weight: 700;
+}
+
+.local-academicpanel-table td,
+.local-academicpanel-table th {
+    vertical-align: middle;
+}
+
+.local-academicpanel-manage .btn-danger,
+.local-academicpanel-manage .btn-danger:link,
+.local-academicpanel-manage .btn-danger:visited,
+.local-academicpanel-manage .btn-danger:hover,
+.local-academicpanel-manage .btn-danger:focus,
+.local-academicpanel-manage .btn-success,
+.local-academicpanel-manage .btn-success:link,
+.local-academicpanel-manage .btn-success:visited,
+.local-academicpanel-manage .btn-success:hover,
+.local-academicpanel-manage .btn-success:focus,
+.local-academicpanel-manage .btn-primary,
+.local-academicpanel-manage .btn-primary:link,
+.local-academicpanel-manage .btn-primary:visited,
+.local-academicpanel-manage .btn-primary:hover,
+.local-academicpanel-manage .btn-primary:focus,
+.local-academicpanel-manage .btn-secondary,
+.local-academicpanel-manage .btn-secondary:link,
+.local-academicpanel-manage .btn-secondary:visited,
+.local-academicpanel-manage .btn-secondary:hover,
+.local-academicpanel-manage .btn-secondary:focus {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.local-academicpanel-manage table .btn {
+    margin-right: .25rem;
+}
+
+.local-academicpanel-manage .badge {
+    color: #fff;
+}
+
+.local-academicpanel-manage .badge-secondary {
+    background-color: #6c757d;
+}
+
+.local-academicpanel-manage .badge-success {
+    background-color: #198754;
+}
+
+.local-academicpanel-coursedetail .btn-secondary,
+.local-academicpanel-coursedetail .btn-secondary:link,
+.local-academicpanel-coursedetail .btn-secondary:visited,
+.local-academicpanel-coursedetail .btn-secondary:hover,
+.local-academicpanel-coursedetail .btn-secondary:focus {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.local-academicpanel-coursedetail .badge {
+    color: #fff;
+    font-size: .78rem;
+    padding: .35em .6em;
+}
+
+.local-academicpanel-coursedetail .badge-success {
+    background-color: #198754;
+}
+
+.local-academicpanel-coursedetail .badge-danger {
+    background-color: #dc3545;
+}
+
+.local-academicpanel-coursedetail .badge-secondary {
+    background-color: #6c757d;
+}
+
+.local-academicpanel-course-meta {
+    color: #52616f;
+    font-size: .9rem;
+}
+
+.local-academicpanel-detail-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.local-academicpanel-coursedetail .btn-primary,
+.local-academicpanel-coursedetail .btn-primary:link,
+.local-academicpanel-coursedetail .btn-primary:visited,
+.local-academicpanel-coursedetail .btn-primary:hover,
+.local-academicpanel-coursedetail .btn-primary:focus {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+    .local-academicpanel-charts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .local-academicpanel-bar-item {
+        grid-template-columns: 1fr;
+    }
+
+    .local-academicpanel-chart-tab {
+        flex: 1 1 46%;
+    }
+}
