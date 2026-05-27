@@ -3,11 +3,14 @@ namespace local_academicpanel\external;
 
 defined('MOODLE_INTERNAL') || die();
 
-use core_external\external_api;
-use core_external\external_function_parameters;
-use core_external\external_single_structure;
-use core_external\external_multiple_structure;
-use core_external\external_value;
+global $CFG;
+require_once($CFG->libdir . '/externallib.php');
+
+use external_api;
+use external_function_parameters;
+use external_single_structure;
+use external_multiple_structure;
+use external_value;
 use local_academicpanel\local\mapping_repository;
 
 class get_programs extends external_api {
